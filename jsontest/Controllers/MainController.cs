@@ -23,7 +23,7 @@ namespace jsontest.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostJson(Foo foo)
+        public IActionResult PostJson(List<Foo> foo)
         {
             using (var s = new StreamWriter("f.json"))
             {
